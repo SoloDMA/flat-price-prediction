@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Узнайте стоимость своей квартиры</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#about">О проекте</a>
+    <a href="#how-it-works">Как это работает?</a>
+    <a href="#user-flat-info">Стоимость моей квартиры</a>
+</header>
+<main id="main-content">
+    <section class="section" id="about" >
+        <img src="images/main_section_bg.jpg" alt="flats">
+        <h1>Хотите узнать сколько стоит ваша квартира <span>без помощи риелтора?</span></h1>
+        <p>Тогда воспользуйтесь этим сайтом! Он предназначен для определния ориентировочной стоимости вашей квартиры, основываясь на рынке недвижимости в Воронеже.</p>
+    </section>
+    <section class="section" id="how-it-works">
+        <p class="paragraph-style">Стоимость вашей квартиры определяется алгоритмами машинного обучения, которые были натренерованы
+           на базе из более чем 15 000 объявлений крупнейших площадок по продаже недвижимости.
+        </p>
+        <p class="paragraph-style">Воспользоваться сервисом очень просто! Нужно всего лишь выполнить 3 простых шага.</p>
+        <div id="widgets">
+            <div class="widget">
+                <img src="https://img.icons8.com/dusk/64/000000/form.png"/>
+                <p>Перейдите к месту заполнения формы с данными о вашей квартире.</p>
+            </div>
+
+            <div class="widget">
+                <img src="https://img.icons8.com/officel/80/000000/pencil.png"/>
+                <p>Полностью заполните форму, указав район, в котором расположена квартира,
+                    этаж, этажность дома и его тип, а также количетсво комнат и общую площадь квартиры.
+                </p>
+            </div>
+
+            <div class="widget">
+                <img src="https://img.icons8.com/plasticine/100/000000/checkmark.png"/>
+                <p>Отправьте заполненную форму и вы увидите ориентировочную стоимость вашей квартиры.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="section" id="user-flat-info">
+        <p class="paragraph-style">Заполните форму данными о своей квартире. Обратите внимание, что все поля обязательны для заполнения.</p>
+        <form name="flat_info" id="flat-info-form"  action="#">
+            <select required class="form-item" name="district" id="flat-district">
+                <option value="0" selected disabled hidden>Выберете район</option>
+                <option value="1">Железнодорожный</option>
+                <option value="2">Коминтерновский</option>
+                <option value="3">Левобережный</option>
+                <option value="4">Ленинский</option>
+                <option value="5">Советский</option>
+                <option value="6">Центральный</option>
+            </select>
+
+            <input required class="form-item" type="number" min="1" placeholder="На каком этаже ваша квартира?">
+            <input required class="form-item" type="number" min="1" placeholder="Этажность дома">
+
+
+            <select required class="form-item" name="type" id="flat-type">
+                <option value="0" selected disabled hidden>Выберете тип дома</option>
+                <option value="1">Кирпичный</option>
+                <option value="2">Панельный</option>
+                <option value="3">Блочный</option>
+                <option value="4">Монолитный</option>
+            </select>
+
+            <input required class="form-item" type="number" min="1" placeholder="Количество комнат">
+            <input required class="form-item" type="number" min="1" placeholder="Общая площадь квартиры">
+            <button type="reset" class="btn">Отчистить</button>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+    <section class="section" id="prediction">
+        <div id="flat-params">
+            <h1 class="text-center-style" id="predict-text">Стоимость вашей квартиры составляет:</h1>
+            <h1 class="text-center-style" id="prediction-result">2 300 000</h1>
+            <h1 class="text-center-style" id="rub">рублей</h1>
+        </div>
+
+
+    </section>
+</main>
+<footer id="footer" >
+    <p id="author">Соломенцев Дмитрий Романович</p>
+    <div id="references">
+        <a href="#about">О проекте</a>
+        <a href="#how-it-works">Как это работает?</a>
+        <a href="#user-flat-info">Стоимость моей квартиры</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

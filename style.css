@@ -1,0 +1,273 @@
+html, body{
+    margin: 0;
+}
+
+
+/*body{*/
+/*    background-color: #613b316b;*/
+/*}*/
+
+#header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #efe0e0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px black;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+#header a{
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+    font: 20px "Times New Roman";
+    padding-top: 15px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#header a:first-child{
+    border-right: 1px solid #0000001c;
+}
+
+#header a:last-child{
+    border-left: 1px solid #0000001c;
+}
+
+#header a:hover{
+    background-color: #a9a3a3;
+}
+
+
+#main-content{
+    position: relative;
+}
+
+.section{
+    width: 100%;
+    height: 800px;
+}
+
+#about{
+    box-shadow: 0px 7px 10px 0px #969693;
+}
+
+#about img{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    opacity: 0.95;
+}
+
+#about h1{
+    margin: 0;
+    width: 650px;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    color: white;
+    font: 70px "Times New Roman";
+    line-height: 76px;
+}
+
+#about h1 span{
+    background-color: #ff000099;
+}
+
+#about p{
+    margin: 0;
+    width: 650px;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 150px;
+    top: 500px;
+    color: white;
+    font: 35px "Times New Roman";
+    background-color: #00000040;
+}
+
+#how-it-works{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.82) 19%, rgba(123, 92, 87, 0.41) 83%);
+}
+
+.paragraph-style{
+    padding: 0 150px;
+    margin: 0;
+    background-color: #efe0e0;
+    font: 35px "Times New Roman";
+    text-align: justify;
+    color: #673f3f;
+}
+
+#how-it-works .paragraph-style:nth-child(1){
+    position: relative;
+    top: 50px;
+}
+
+#how-it-works .paragraph-style:nth-child(2){
+    position: relative;
+    top: 80px;
+}
+
+#widgets{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#widgets .widget{
+    width: 300px;
+    height: 300px;
+    background-color: #a1d3a21c;
+    margin: 0 30px;
+    border: 1px solid #8f9e9e38;
+    border-radius: 3px;
+}
+
+#widgets .widget img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: calc(50% - 40px);
+    top: 20px;
+}
+
+.widget p{
+    padding: 0 10px;
+    font: 20px "Times New Roman";
+    background-color: #0000001c;
+    text-align: justify;
+    margin-top: 60px;
+    height: 150px;
+}
+
+
+#user-flat-info p{
+    position: relative;
+    top: 50px;
+}
+
+
+#flat-info-form{
+    position: relative;
+    top: 150px;
+    background-color: whitesmoke;
+    padding: 30px 0 30px calc(50% - 300px);
+}
+
+
+.form-item{
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(0,0,0,0);
+    margin-bottom: 10px;
+    height: 60px;
+    width: 600px;
+    font: 20px "Times New Roman";
+    padding-left: 10px;
+}
+
+#flat-info-form input{
+    width: 590px;
+}
+
+#flat-info-form .btn{
+    display: inline;
+    background-color: #00000029;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font: 18px "Times New Roman";
+    margin-top: 15px;
+}
+
+#flat-info-form button[type="submit"]{
+    position: relative;
+    left: 410px;
+}
+
+#flat-info-form .btn:hover{
+    background-color: #487b2863;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#prediction #flat-params{
+    position: relative;
+    top: 50px;
+    padding-right: 100px;
+    background-color: #11949461;
+    height: 80%;
+    border-left: 100px solid #13b9931f;
+}
+
+#prediction .text-center-style{
+    font-family: "Times New Roman";
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#prediction #predict-text{
+    padding-top: 50px;
+    font-size: 40px;
+    color: #464138;
+}
+
+#prediction #prediction-result{
+    padding-top: 120px;
+    font-size: 130px;
+    letter-spacing: 7px;
+}
+
+#prediction #rub{
+
+    font-size: 70px;
+}
+
+#prediction #district{
+    background-color: red;
+}
+
+#footer{
+    height: 50px;
+    width: 100%;
+    background-color: #efe0e0;
+    z-index: 1;
+    position: relative;
+    bottom: 5px;
+    box-shadow: 0 5px 20px black;
+}
+
+#footer #author{
+    text-align: center;
+    font: 20px "Times New Roman";
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+#footer #references{
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#footer #references a{
+    color: black;
+    font: 14px "Times New Roman";
+    margin-right: 10px;
+}
+
+
+
+
